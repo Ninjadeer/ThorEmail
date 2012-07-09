@@ -1,0 +1,16 @@
+<?php
+$mailSettings = array(
+	'path' => dirname(__DIR__).'/../data/temp/mail'
+);
+
+return array(
+	'service_manager' => array(
+		'factories' => array(
+			'thoremail-mail-transport' => function ($sm) use ($mailSettings) {
+			return new Zend\Mail\Transport\File(
+				new Zend\Mail\Transport\FileOptions($mailSettings)
+			);
+			},
+		),
+	),
+);

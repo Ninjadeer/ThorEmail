@@ -1,0 +1,28 @@
+{
+    "name": "thor/thor-email",
+    "description": "Provides a controller plugin to facilitate sending of email messages.",
+    "type": "library",
+    "keywords": [
+        "zf2"
+    ],
+    "homepage": "",
+    "authors": [
+        {
+            "name": "Carwyn Balch",
+            "email": "carwyn@ninjadeer.com",
+            "homepage": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "ThorEmail": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    }
+}
